@@ -103,4 +103,9 @@ input:hover, input:focus{
     main{
         width: 85vw;
     }
+    .infoOff{
+        border-radius: 2rem;
+    padding: 1rem .5rem;
+    background-image: radial-gradient(closest-corner, #0000001a 70%, #00000000);
+    }
 }
