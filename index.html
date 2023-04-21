@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="PT_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icon-16x16.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/animated-cep.css">
+</head>
+
+<body>
+    <main>
+        <div id="pop-cep"></div>
+        <div class="cep-container">
+            <label for="CEP">
+                <h1>Coloque o CEP</h1>
+            </label>
+            <input type="text" name="CEP" id="CEP" maxlength="8" pattern="[0-9]*" title="Apenas numeros.">
+            <p>Ex: xxxxxxxx</p>
+        </div>
+        <div id="info" class="infoOff">
+            <h2>Rua: <span></span></h2>
+            <h2>Bairro: <span></span></h2>
+            <h2>Cidade: <span></span></h2>
+            <h2>Estado: <span></span></h2>
+            <h2>DDD: <span></span></h2>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+    <script src="js/animated-cep.js"></script>
+</body>
+
+</html>

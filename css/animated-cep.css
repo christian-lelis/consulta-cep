@@ -1,0 +1,14 @@
+.pop-cep{
+    position: fixed;
+    font-size: 1rem;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    white-space: nowrap;
+    transform: scale(0.2);
+    transition: opacity 4s ease, transform 4s ease;
+
+}
+.anime{
+    transform: scale(1);
+}
