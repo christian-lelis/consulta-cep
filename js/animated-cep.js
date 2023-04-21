@@ -14,9 +14,9 @@ function randomCEP(){
         }
         return ceps
     }
-    const numCeps = 99
+    const numCeps = 30
     let cepContainer= document.getElementById("pop-cep")
-    const delay = 200;
+    const delay = 300;
 
     function colorGen(){
         const letters= "0123456789ABCDEF"
