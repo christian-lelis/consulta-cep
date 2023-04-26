@@ -14,10 +14,25 @@ function randomCEP(){
         }
         return ceps
     }
-    const numCeps = 99
-    let cepContainer= document.getElementById("pop-cep")
-    const delay = 200;
+    let numCeps = 60
+    let delay = 200
+    function setCepCount(){
+        if(window.innerWidth<480){
+            numCeps = 10
+            delay = 800
 
+        } else if(window.innerWidth<1024){
+            numCeps = 30
+            delay = 500
+        }
+        else{
+            numCeps = 60
+            delay = 300
+        }
+    }
+    setCepCount()
+    let cepContainer= document.getElementById("pop-cep")
+    window.addEventListener('resize', setCepCount)
     function colorGen(){
         const letters= "0123456789ABCDEF"
         let colorHex="#"
@@ -58,6 +73,7 @@ function randomCEP(){
         setTimeout(animateCEPs,delay)
     }
     animateCEPs()
+    
 }
 
 randomCEP()
